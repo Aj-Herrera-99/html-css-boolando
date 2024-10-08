@@ -122,6 +122,21 @@ img {
 .p-2-6 {
     padding: 2px 6px;
 }
+/* z-index */
+.z-0 {
+    z-index: 0;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-100 {
+    z-index: 100;
+}
+.z-1000 {
+    z-index: 1000;
+}
 
 /* body */
 body {
@@ -177,27 +192,31 @@ main {
     width: calc((100% - (2 * var(--gap-md))) / 3);
 }
 
+/* position relative che mi servira per posizionare in modo assoluto cuoricino e sconto */
 .card .card-image {
     position: relative;
     cursor: pointer;
 }
-
+/* prima immagine, metto position relative senza spostarla per usufruire della proprieta z-index */
 .card-image .first-image {
     position: relative;
-    /* z-index: 3; */
 }
-
-.card .card-image:hover .image-onhover {
-    z-index: 1;
-}
-
-.card-image .image-onhover {
+/* la seconda immagine con le proprieta di position abs top left 0 */
+/* nell'html è la prima immagine dall'inizio alla fine quindi è coperta di default */
+.card-image .image-behind {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
 }
 
+/* all hover della card image, l immagine dietro va sopra e diventa visibile */
+.card .card-image:hover .image-behind {
+    z-index: 1;
+}
+
+
+/* position absolute per cuoricino e sconto e posizionamento sulla card image */
+/* aggiunti in html le classi z-100 per heart e sale in modo tale da averli sempre in superficie nella card */
 .card .heart {
     position: absolute;
     background-color: var(--white);
@@ -205,12 +224,11 @@ main {
     right: 0;
     padding: 0 12px;
 }
-
 .card .sale {
     position: absolute;
     bottom: 30px;
 }
-
+/* card info */
 .card .card-info {
     line-height: 17px;
 }
