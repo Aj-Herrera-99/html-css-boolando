@@ -38,6 +38,7 @@ img {
     --gap-sm: 10px;
     --gap-md: 15px;
     --font-sm: 0.85rem;
+    --font-lg: 1.7rem;
     --weight-600: 600;
 }
 
@@ -78,8 +79,18 @@ img {
 .gap-md {
     gap: var(--gap-md);
 }
+/* bg-colors */
+.bg-red {
+    background-color: var(--red);
+}
+.bg-green {
+    background-color: var(--true-green);
+}
 
 /* text */
+.text-white {
+    color: var(--white);
+}
 .text-grey {
     color: var(--grey);
 }
@@ -92,6 +103,9 @@ img {
 .text-sm {
     font-size: var(--font-sm);
 }
+.text-lg {
+    font-size: var(--font-lg);
+}
 .uppercase {
     text-transform:uppercase;
 }
@@ -103,6 +117,10 @@ img {
 }
 .inline-block {
     display: inline-block;
+}
+/* paddings */
+.p-2-6 {
+    padding: 2px 6px;
 }
 
 /* body */
@@ -130,6 +148,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    /* z-index: 1000; */
 }
 
 header nav> * {
@@ -156,6 +175,40 @@ main {
 .catalog .card {
     border: 1px solid blue;
     width: calc((100% - (2 * var(--gap-md))) / 3);
+}
+
+.card .card-image {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-image .first-image {
+    position: relative;
+    /* z-index: 3; */
+}
+
+.card .card-image:hover .image-onhover {
+    z-index: 1;
+}
+
+.card-image .image-onhover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.card .heart {
+    position: absolute;
+    background-color: var(--white);
+    top: 10px;
+    right: 0;
+    padding: 0 12px;
+}
+
+.card .sale {
+    position: absolute;
+    bottom: 30px;
 }
 
 .card .card-info {
