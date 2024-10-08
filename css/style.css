@@ -1,27 +1,89 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* debug */
 .debug {
     border: 2px solid red;
 }
+/* root */
+:root {
+    --bright-orange: #ff6900;
+    --white: #fff;
+    --black: #000;
+    --red: #f00;
+    --true-green: #008000;
+    --black-two: #1a1a1a;
+    --gap-sm: 5px;
+    --gap-md: 10px;
+}
 
+/* flex utility */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nowrap {
+    flex-wrap: nowrap;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.gap-sm {
+    gap: var(--gap-sm);
+}
+.gap-md {
+    gap: var(--gap-md);
+}
+
+/* containers */
 .container {
     border: 1px solid blue;
-    background-color: aqua;
     max-width: 1200px;
     margin-inline: auto;
+    padding-inline: 20px;
 }
+
 /* header */
 header {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(196, 196, 196);
 }
+
+header nav > * {
+    width: calc(100% / 3);
+}
+
 /* main */
 main {
     background-color: rgb(137, 137, 137);
 }
+/* catalogo articoli main */
+.catalog {
+    background-color: #d8d8d8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* struttura catalog cards*/
+.catalog .card {
+    border: 1px solid blue;
+    width: calc((100% - (2 * var(--gap-md))) / 3);
+}
+
 /* footer */
 footer {
     background-color: rgb(96, 96, 96);
