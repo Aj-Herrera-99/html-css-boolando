@@ -23,7 +23,7 @@ img {
 
 /* debug */
 .debug {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 /* root */
@@ -147,7 +147,7 @@ body {
 
 /* containers */
 .container {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 20px;
@@ -187,7 +187,6 @@ main {
 
 /* struttura catalog cards*/
 .catalog .card {
-    border: 1px solid blue;
     width: calc((100% - (2 * var(--gap-md))) / 3);
 }
 
@@ -237,4 +236,5 @@ main {
 footer {
     background-color: var(--black-two);
     color: var(--white);
+    padding-block: 20px;
 }
