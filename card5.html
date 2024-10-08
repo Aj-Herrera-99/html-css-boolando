@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Zalando</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="debug z-1000">
+        <!-- navbar che contiene gli elementi dell header -->
+        <nav class="container d-flex">
+            <ul class="department d-flex gap-sm items-center">
+                <li><a href="#">Donna</a></li>
+                <li><a href="#">Uomo</a></li>
+                <li><a href="#">Bambini</a></li>
+            </ul>
+            <div class="logo d-flex flex-center">
+                <a href=".">
+                    <img src="img/boolean-logo.png" alt="boolean logo">
+                </a>
+            </div>
+            <ul class="icons d-flex gap-sm flex-end items-center">
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+    <main class="debug">
+        <div class="container catalog d-flex flex-center gap-md">
+            <!--card 1 -->
+            <div class="card">
+                <div class="card-image debug">
+                    <!-- qui ci metto l immagine in hover -->
+                    <img class="image-behind" src="img/5b.webp" alt="img5b">
+                    <img class="first-image" src="img/5.webp" alt="img5">
+                    <div class="heart text-lg z-10">&hearts;</div>
+                    <div class="sale z-10">
+                        <span class="bg-red text-white text-sm p-2-6">-50%</span>
+                        <span class="bg-green text-white text-sm p-2-6">Sostenibilità</span>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="text-sm text-grey">Levi's</span><br>
+                    <span class="uppercase text-bolder">relaxed fit tee unisex</span><br>
+                    <span class="text-sm text-red">18,99$</span> <span class="text-sm text-line-through">29,99$</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="debug">
+        <div class="container d-flex flex-between">
+            <div class="info">
+                <h4 class="text-bolder">Boolando s.r.l</h4>
+                <ul class="d-flex gap-sm">
+                    <li class="text-sm"><a href="#">Informazioni legali</a></li>
+                    <li class="text-sm"><a href="#">Normativa sulla privacy</a></li>
+                    <li class="text-sm"><a href="#">Diritto di recesso</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <p class="text-bolder">Trovaci anche su</p>
+                <ul class="d-flex gap-sm">
+                    <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
