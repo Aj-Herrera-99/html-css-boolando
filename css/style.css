@@ -187,6 +187,7 @@ main {
 
 /* struttura catalog cards*/
 .catalog .card {
+    min-width: 300px;
     width: calc((100% - (2 * var(--gap-md))) / 3);
 }
 
