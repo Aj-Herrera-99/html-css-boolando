@@ -36,6 +36,8 @@ img {
     --black-two: #1a1a1a;
     --gap-sm: 10px;
     --gap-md: 15px;
+    --font-sm: 0.85rem;
+    --weight-600: 600;
 }
 
 /* flex utility */
@@ -73,6 +75,12 @@ img {
 }
 
 /* text */
+.text-sm {
+    font-size: var(--font-sm);
+}
+.text-bolder {
+    font-weight: var(--weight-600);
+}
 .text-center {
     text-align: center;
 }
@@ -136,5 +144,6 @@ main {
 
 /* footer */
 footer {
-    background-color: rgb(96, 96, 96);
+    background-color: var(--black-two);
+    color: var(--white);
 }
